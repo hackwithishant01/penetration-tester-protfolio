@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackWithIshant | Ethical Hacker & Penetration Tester</title>
+    <link rel="stylesheet" href="style.css" />
+    <link  
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Fira+Code:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Matrix Background -->
+    <div class="matrix-bg">
+      <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="glitch-text" data-text="HACK">HACK</span>
+          <span class="logo-separator">|</span>
+          <span class="nav-name">ISHANT</span>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#certifications" class="nav-link">Certifications</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="btn close"></span>
+              <span class="btn minimize"></span>
+              <span class="btn maximize"></span>
+            </div>
+            <div class="terminal-title">root@hackwithishant:~</div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line">
+              <span class="prompt">root@hackwithishant:~$</span>
+              <span class="command" id="typing-text"></span>
+              <span class="cursor">|</span>
+            </div>
+            <div class="output-line">
+              <div class="welcome-message">
+                <h1
+                  class="hero-title glitch-text"
+                  data-text="WELCOME TO HACKWITHISHANT"
+                >
+                  WELCOME TO HACKWITHISHANT
+                </h1>
+                <p class="hero-subtitle">ETHICAL HACKER & PENETRATION TESTER</p>
+                <p class="hero-tagline">CODE. HACK. DEFEND.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn-primary">
+            <i class="fas fa-user-secret"></i>
+            HIRE ME
+          </a>
+          <a href="#" class="btn-secondary">
+            <i class="fas fa-file-download"></i>
+            VIEW RESUME
+          </a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title glitch-text" data-text="SKILLS">SKILLS</h2>
+        <div class="skills-grid">
+          <div class="skill-card" data-aos="fade-up">
+            <div class="card-header">
+              <i class="fas fa-code"></i>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="card-body">
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="95"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Bash</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Go</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">C/C++</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="75"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-header">
+              <i class="fas fa-bug"></i>
+              <h3>Penetration Testing Tools</h3>
+            </div>
+            <div class="card-body">
+              <div class="tool-grid">
+                <div class="tool-item">
+                  <i class="fas fa-network-wired"></i>
+                  <span>Nmap</span>
+                </div>
+                <div class="tool-item">
+                  <i class="fas fa-spider"></i>
+                  <span>Burp Suite</span>
+                </div>
+                <div class="tool-item">
+                  <i class="fas fa-bomb"></i>
+                  <span>Metasploit</span>
+                </div>
+                <div class="tool-item">
+                  <i class="fas fa-eye"></i>
+                  <span>Wireshark</span>
+                </div>
+                <div class="tool-item">
+                  <i class="fas fa-search"></i>
+                  <span>Nikto</span>
+                </div>
+                <div class="tool-item">
+                  <i class="fas fa-database"></i>
+                  <span>SQLMap</span>
+                </div>
+                <div class="tool-item">
+                  <i class="fas fa-key"></i>
+                  <span>Hydra</span>
+                </div>
+                <div class="tool-item">
+                  <i class="fas fa-unlock"></i>
+                  <span>John The Ripper</span>
+                </div>
+                <div class="tool-item">
+                  <i class="fas fa-wifi"></i>
+                  <span>Aircrack-ng</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-header">
+              <i class="fas fa-desktop"></i>
+              <h3>Environments & OS</h3>
+            </div>
+            <div class="card-body">
+              <div class="env-grid">
+                <div class="env-item">
+                  <i class="fab fa-linux"></i>
+                  <div class="env-info">
+                    <span class="env-name">Kali Linux</span>
+                    <span class="env-desc">Primary Testing OS</span>
+                  </div>
+                </div>
+                <div class="env-item">
+                  <i class="fas fa-terminal"></i>
+                  <div class="env-info">
+                    <span class="env-name">BlackArch Linux</span>
+                    <span class="env-desc">Advanced Pentesting</span>
+                  </div>
+                </div>
+                <div class="env-item">
+                  <i class="fas fa-feather-alt"></i>
+                  <div class="env-info">
+                    <span class="env-name">Parrot OS</span>
+                    <span class="env-desc">Privacy & Security</span>
+                  </div>
+                </div>
+                <div class="env-item">
+                  <i class="fas fa-cube"></i>
+                  <div class="env-info">
+                    <span class="env-name">VirtualBox</span>
+                    <span class="env-desc">Virtualization</span>
+                  </div>
+                </div>
+                <div class="env-item">
+                  <i class="fab fa-docker"></i>
+                  <div class="env-info">
+                    <span class="env-name">Docker</span>
+                    <span class="env-desc">Containerization</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <h2 class="section-title glitch-text" data-text="CERTIFICATIONS">
+          CERTIFICATIONS
+        </h2>
+        <div class="timeline">
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-dot in-progress"></div>
+            <div class="timeline-content">
+              <div class="cert-card">
+                <div class="cert-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="cert-info">
+                  <h3>eJPT</h3>
+                  <p class="cert-name">
+                    eLearnSecurity Junior Penetration Tester
+                  </p>
+                  <p class="cert-grade">9th Grade</p>
+                  <span class="cert-status in-progress">IN PROGRESS</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-dot  planned"></div>
+            <div class="timeline-content">
+              <div class="cert-card">
+                <div class="cert-icon">
+                  <i class="fas fa-user-secret"></i>
+                </div>
+                <div class="cert-info">
+                  <h3>CEH</h3>
+                  <p class="cert-name">Certified Ethical Hacker</p>
+                  <p class="cert-grade">10th Grade</p>
+                  <span class="cert-status planned">planned</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-dot  planned"></div>
+            <div class="timeline-content">
+              <div class="cert-card">
+                <div class="cert-icon">
+                  <i class="fas fa-crosshairs"></i>
+                </div>
+                <div class="cert-info">
+                  <h3>OSCP</h3>
+                  <p class="cert-name">
+                    Offensive Security Certified Professional
+                  </p>
+                  <p class="cert-grade">11th Grade</p>
+                  <span class="cert-status planned">planned</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-dot planned"></div>
+            <div class="timeline-content">
+              <div class="cert-card">
+                <div class="cert-icon">
+                  <i class="fas fa-certificate"></i>
+                </div>
+                <div class="cert-info">
+                  <h3>CompTIA Security+</h3>
+                  <p class="cert-name">CompTIA Security+ Certification</p>
+                  <p class="cert-grade">12th Grade</p>
+                  <span class="cert-status planned">planned</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title glitch-text" data-text="PROJECTS">PROJECTS</h2>
+        <div class="projects-grid">
+          <div class="project-card" data-aos="zoom-in">
+            <div class="project-image">
+              <i class="fas fa-bug"></i>
+            </div>
+            <div class="project-content">
+              <h3>Bug Bounty Research</h3>
+              <p>
+                Comprehensive vulnerability research and responsible disclosure
+                reports focusing on web application security flaws.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Burp Suite</span>
+                <span class="tech-tag">OWASP</span>
+                <span class="tech-tag">Python</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-external-link-alt"></i>
+                  View Report
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+            <div class="project-image">
+              <i class="fas fa-flag"></i>
+            </div>
+            <div class="project-content">
+              <h3>CTF Challenges</h3>
+              <p>
+                Solutions and writeups for various Capture The Flag challenges
+                from TryHackMe, Hack The Box, and other platforms.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Kali Linux</span>
+                <span class="tech-tag">Metasploit</span>
+                <span class="tech-tag">Nmap</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+            <div class="project-image">
+              <i class="fas fa-network-wired"></i>
+            </div>
+            <div class="project-content">
+              <h3>Custom Port Scanner</h3>
+              <p>
+                Advanced multi-threaded port scanner with service detection, OS
+                fingerprinting, and vulnerability assessment capabilities.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Threading</span>
+                <span class="tech-tag">Socket</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fab fa-github"></i>
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="zoom-in" data-aos-delay="600">
+            <div class="project-image">
+              <i class="fas fa-key"></i>
+            </div>
+            <div class="project-content">
+              <h3>Brute Force Tool</h3>
+              <p>
+                Intelligent brute force attack tool with dictionary support,
+                rate limiting, and multiple protocol compatibility.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Go</span>
+                <span class="tech-tag">HTTP/HTTPS</span>
+                <span class="tech-tag">SSH/FTP</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">
+                  <i class="fas fa-download"></i>
+                  Download
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title glitch-text" data-text="ABOUT">ABOUT</h2>
+        <div class="about-content">
+          <div class="about-text" data-aos="fade-right">
+            <div class="about-story">
+              <h3>My Journey Into Cybersecurity</h3>
+              <p>
+                My fascination with cybersecurity began in middle school when I
+                first encountered the concept of ethical hacking. What started
+                as curiosity about how systems work quickly evolved into a deep
+                passion for understanding their vulnerabilities and building
+                defenses against malicious attacks.
+              </p>
+              <p>
+                Through countless hours of self-study, hands-on practice, and
+                certification pursuits, I've developed expertise in penetration
+                testing, vulnerability assessment, and security research. My
+                approach combines technical proficiency with ethical
+                responsibility, always focusing on improving security postures
+                rather than exploiting weaknesses.
+              </p>
+              <p>
+                My ultimate dream is to join India's Research and Analysis Wing
+                (RAW), where I can leverage my cybersecurity skills to protect
+                national interests and contribute to the country's digital
+                security infrastructure. Every project I undertake and every
+                skill I develop brings me closer to this goal.
+              </p>
+            </div>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-count="500">0</span>
+                <span class="stat-label">Hours of Practice</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="50">0</span>
+                <span class="stat-label">CTF Challenges</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="15">0</span>
+                <span class="stat-label">Bug Reports</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-count="4">0</span>
+                <span class="stat-label">Certifications</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual" data-aos="fade-left">
+            <div class="hacker-terminal">
+              <div class="terminal-header">
+                <div class="terminal-buttons">
+                  <span class="btn close"></span>
+                  <span class="btn minimize"></span>
+                  <span class="btn maximize"></span>
+                </div>
+                <div class="terminal-title">ishant@hacklab:~</div>
+              </div>
+              <div class="terminal-body">
+                <div class="code-lines">
+                  <div class="code-line">
+                    <span class="line-number">1</span>
+                    <span class="code">#!/bin/bash</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-number">2</span>
+                    <span class="code"># Ethical Hacking Mindset</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-number">3</span>
+                    <span class="code">function hack_ethically() {</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-number">4</span>
+                    <span class="code"> identify_vulnerabilities()</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-number">5</span>
+                    <span class="code"> report_responsibly()</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-number">6</span>
+                    <span class="code"> help_secure_systems()</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-number">7</span>
+                    <span class="code">}</span>
+                  </div>
+                  <div class="code-line">
+                    <span class="line-number">8</span>
+                    <span class="code">hack_ethically</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title glitch-text" data-text="CONTACT">CONTACT</h2>
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Let's Connect</h3>
+            <p>
+              Ready to discuss cybersecurity projects, collaboration
+              opportunities, or just want to connect with a fellow security
+              enthusiast?
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <div class="method-info">
+                  <span class="method-label">Email</span>
+                  <span class="method-value"
+                    >hackwithishant@protonmail.com</span
+                  >
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="method-info">
+                  <span class="method-label">Location</span>
+                  <span class="method-value">India</span>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-clock"></i>
+                <div class="method-info">
+                  <span class="method-label">Response Time</span>
+                  <span class="method-value">Within 24 hours</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link telegram">
+                <i class="fab fa-telegram"></i>
+                <span>Telegram</span>
+              </a>
+              <a href="#" class="social-link discord">
+                <i class="fab fa-discord"></i>
+                <span>Discord</span>
+              </a>
+              <a href="#" class="social-link github">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-form-container" data-aos="fade-left">
+            <form class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+                <span class="form-border"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+                <span class="form-border"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required />
+                <span class="form-border"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+                <span class="form-border"></span>
+              </div>
+
+              <button type="submit" class="btn-submit">
+                <i class="fas fa-paper-plane"></i>
+                SEND MESSAGE
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2025 HackWithIshant. All rights reserved.</p>
+            <p>Ethical Hacking | Cybersecurity | Penetration Testing</p>
+          </div>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
